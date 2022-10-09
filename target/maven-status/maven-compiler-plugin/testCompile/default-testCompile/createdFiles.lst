@@ -1,0 +1,11 @@
+pages\HmcPage.class
+pages\AmazonPage.class
+utilities\ConfigReader.class
+pages\AutoexercisePage.class
+pages\SaucedemoPage.class
+runners\Runner.class
+stepDefinition\AmazonSearchNutellaStepDefinition.class
+utilities\Driver.class
+pages\DhtmlgoodiesPage.class
+pages\BlueRentaCarPage.class
+pages\FaceBookPage.class
