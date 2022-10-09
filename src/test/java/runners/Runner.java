@@ -7,7 +7,7 @@ import org.junit.runner.RunWith;
 @RunWith(Cucumber.class)
 @CucumberOptions(features = "src/test/resources/features",
                  glue = "stepDefinition",
-                 tags = "@gp1")
+                 tags = "@All")
 
 
 public class Runner {
