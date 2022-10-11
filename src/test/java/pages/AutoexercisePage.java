@@ -166,10 +166,10 @@ public class AutoexercisePage {
     @FindBy(xpath = "//*[@class='fa fa-angle-double-left']")
     public WebElement getInTouchHome;
 
-    @FindBy(xpath = "//*[@style='color: orange;']")
+    @FindBy(xpath = "( //*[text()=' Test Cases'])[1]")
     public WebElement testCase;
 
-    @FindBy(xpath = "//*[text()='Test Cases']")
+    @FindBy(xpath = "( //*[text()='Test Cases'])[1]")
     public WebElement testCaseVisible;
 
     @FindBy(xpath = "//*[@class='material-icons card_travel']")
@@ -252,26 +252,6 @@ public class AutoexercisePage {
 
     @FindBy(xpath = "(//*[@name='email'])[1]")
     public WebElement registerLoginEmail;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
