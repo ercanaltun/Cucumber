@@ -1,8 +1,10 @@
 pages\HmcPage.class
 pages\AmazonPage.class
+stepDefinition\Practice_TC_07step.class
 pages\AutoexercisePage.class
 pages\SaucedemoPage.class
 runners\Runner.class
+utilities\ReusableMethods$1.class
 utilities\Driver.class
 stepDefinition\AutomationaGirisStepDefinition.class
 pages\FaceBookPage.class
@@ -10,3 +12,4 @@ utilities\ConfigReader.class
 stepDefinition\AmazonSearchNutellaStepDefinition.class
 pages\DhtmlgoodiesPage.class
 pages\BlueRentaCarPage.class
+utilities\ReusableMethods.class
