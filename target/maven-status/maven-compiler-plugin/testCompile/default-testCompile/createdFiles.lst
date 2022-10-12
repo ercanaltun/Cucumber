@@ -8,6 +8,7 @@ utilities\ReusableMethods$1.class
 utilities\Driver.class
 stepDefinition\AutomationaGirisStepDefinition.class
 pages\FaceBookPage.class
+stepDefinition\PracticeAmazonStepDef.class
 utilities\ConfigReader.class
 stepDefinition\AmazonSearchNutellaStepDefinition.class
 pages\DhtmlgoodiesPage.class
