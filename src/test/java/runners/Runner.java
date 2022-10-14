@@ -7,8 +7,8 @@ import org.junit.runner.RunWith;
 @RunWith(Cucumber.class)
 @CucumberOptions(features = "src/test/resources/features",
                  glue = "stepDefinition",
-                 tags = "@PracticeAmazon",
-                 dryRun = false)
+                 tags = "@pacticeClick",
+                 dryRun = true)
 
 
 
