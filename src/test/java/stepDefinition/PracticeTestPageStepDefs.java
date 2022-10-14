@@ -1,12 +1,10 @@
 package stepDefinition;
 
 import io.cucumber.java.en.*;
-import io.cucumber.java.sl.In;
 import org.junit.Assert;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
-import pages.PracticeTestPage;
 import utilities.Driver;
 
 import java.util.List;
