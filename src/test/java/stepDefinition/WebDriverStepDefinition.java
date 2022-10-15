@@ -1,29 +1,45 @@
 package stepDefinition;
 
-/*
-public class WebDriverUniversityStepDefinition {
+import io.cucumber.java.en.And;
+import io.cucumber.java.en.Given;
+import org.junit.Assert;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.interactions.Actions;
+import pages.WebDriverPage;
+import utilities.ConfigReader;
+import utilities.Driver;
+import utilities.ReusableMethods;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class WebDriverStepDefinition {
     WebDriverPage webDriverPage=new WebDriverPage();
     Actions actions=new Actions(Driver.getDriver());
+    String ilkSayfa;
+    List<String> windowList;
 
-    @Given("Kullanici webdriveruniversity.com adresine gidin")
-    public void kullaniciWebdriveruniversityComAdresineGidin() {
+    @Given("http:webdriveruniversity.com adresine gidin")
+    public void httpWebdriveruniversityComAdresineGidin() {
         Driver.getDriver().get(ConfigReader.getProperty("webDrUrl"));
-        String ilkSayfa=Driver.getDriver().getCurrentUrl();
+        ilkSayfa=Driver.getDriver().getCurrentUrl();
+        ReusableMethods.waitFor(2);
     }
 
     @And("Login Portal a kadar asagi inin")
     public void loginPortalAKadarAsagiInin() {
         actions.sendKeys(Keys.PAGE_DOWN).perform();
+    ReusableMethods.waitFor(2);
     }
 
-    @Then("Login Portal a tiklayin")
+    @And("Login Portal a tiklayin")
     public void loginPortalATiklayin() {
         webDriverPage.loginPortal.click();
     }
 
     @And("Diger window'a gecin")
     public void digerWindowAGecin() {
-        List<String> windowList=new ArrayList<>(Driver.getDriver().getWindowHandles());
+      windowList=new ArrayList<>(Driver.getDriver().getWindowHandles());
         Driver.getDriver().switchTo().window(windowList.get(1));
     }
 
@@ -40,7 +56,7 @@ public class WebDriverUniversityStepDefinition {
     @And("Popup'ta cikan yazinin validation failed oldugunu test edin")
     public void popupTaCikanYazininValidationFailedOldugunuTestEdin() {
         String expectedPop="validation failed";
-       String actualPop= Driver.getDriver().switchTo().alert().getText();
+        String actualPop= Driver.getDriver().switchTo().alert().getText();
         Assert.assertEquals(expectedPop,actualPop);
     }
 
@@ -51,13 +67,11 @@ public class WebDriverUniversityStepDefinition {
 
     @And("Ilk sayfaya geri donun")
     public void ılkSayfayaGeriDonun() {
-       Driver.getDriver().navigate().back();
+        Driver.getDriver().switchTo().window(windowList.get(0));
     }
 
     @And("Ilk sayfaya donuldugunu test edin")
     public void ılkSayfayaDonuldugunuTestEdin() {
-        String expectedFirstPage="https://webdriveruniversity.com/";
-        Assert.assertEquals(expectedFirstPage,Driver.getDriver().getCurrentUrl());
+        Assert.assertEquals(ilkSayfa,Driver.getDriver().getCurrentUrl());
     }
 }
-*/
