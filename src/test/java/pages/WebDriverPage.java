@@ -10,7 +10,7 @@ public class WebDriverPage {
     public  WebDriverPage(){
         PageFactory.initElements(Driver.getDriver(),this);
     }
-    @FindBy(xpath = "//*[text()='LOGIN PORTAL']")
+    @FindBy(xpath = "//*[text()='Login Portal']")
     public WebElement loginPortal;
 
     @FindBy(xpath = "//*[@placeholder='Username']")

@@ -1,4 +1,5 @@
 stepDefinition\PracticeTestPageStepDefs.class
+stepDefinition\WebDriverStepDefinition.class
 stepDefinition\Practice_TC_07step.class
 pages\AutoexercisePage.class
 utilities\ReusableMethods$1.class
