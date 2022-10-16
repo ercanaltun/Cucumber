@@ -19,7 +19,6 @@ public class ConfigReader {
         }
     }
 
-
     public static String getProperty(String key) {
           /*
          test method'undan yolladığımız String key değeirni alıp

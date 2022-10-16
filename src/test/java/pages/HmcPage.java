@@ -10,7 +10,6 @@ public class HmcPage {
         PageFactory.initElements(Driver.getDriver(), this);
     }
 
-
     @FindBy(xpath = "//*[text()='Log in']")
     public WebElement login;
 

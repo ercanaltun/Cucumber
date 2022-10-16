@@ -19,6 +19,7 @@ public class PracticeTestPageStepDefs {
     int sonuc;
 
 
+
     @Given("{string} adresine gidin")
     public void adresine_gidin(String url) {
         Driver.getDriver().get(url);
