@@ -20,11 +20,14 @@ public class AmazonPage {
     @FindBy(xpath = "//div[@class='a-section a-spacing-small a-spacing-top-small']")
     public WebElement aramaSonucWE;
 
+
     @FindBy(xpath = "//*[@id='nav-link-accountList-nav-line-1']")
     public WebElement helloSignIn;
 
+
     @FindBy(xpath = "(//*[text()='Sign in'])[1]")
     public WebElement signIn;
+
 
     @FindBy(xpath = "//input[@id='ap_email']")
     public WebElement emailBox;

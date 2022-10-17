@@ -19,11 +19,11 @@ public class PracticeTestPageStepDefs {
     int sonuc;
 
 
-
     @Given("{string} adresine gidin")
     public void adresine_gidin(String url) {
         Driver.getDriver().get(url);
     }
+
     @Given("{int} defa click me ye tiklayin")
     public void defa_click_me_ye_tiklayin(Integer int1) {
         for (int i = 0; i < int1; i++) {
@@ -32,6 +32,7 @@ public class PracticeTestPageStepDefs {
 
 
     }
+
     @Given("{int} defa Space dugmesine basin")
     public void defa_space_dugmesine_basin(Integer int1) {
         //  practiceTestPage.clickButton.sendKeys(Keys.SPACE);
@@ -43,29 +44,32 @@ public class PracticeTestPageStepDefs {
 
     @Given("Down yazisindaki iki basamakli sayilarin hepsini toplayin")
     public void down_yazisindaki_iki_basamakli_sayilarin_hepsini_toplayin() {
-        List<WebElement> down32=  practiceTestPage.down32;
+        List<WebElement> down32 = practiceTestPage.down32;
 
-        for (WebElement w:  down32   ) {
-            down32toplam+= Integer.parseInt( w.getText().replaceAll("[^0-9]",""));
+        for (WebElement w : down32) {
+            down32toplam += Integer.parseInt(w.getText().replaceAll("[^0-9]", ""));
         }
-        System.out.println("down32 toplamı  :"+down32toplam);
+        System.out.println("down32 toplamı  :" + down32toplam);
 
     }
+
     @Given("Tum click metinlerinin uzunlugunun toplamini onceki toplamdan cikarin")
     public void tum_click_metinlerinin_uzunlugunun_toplamini_onceki_toplamdan_cikarin() {
         List<WebElement> clickText = practiceTestPage.clickText;
 
-        for (WebElement w :clickText    ) {
-            clickTextToplam+=  w.getText().length();}
+        for (WebElement w : clickText) {
+            clickTextToplam += w.getText().length();
+        }
 
         sonuc = down32toplam - clickTextToplam;
         System.out.println("sonuc = " + sonuc);
 
     }
+
     @Then("sonucun {int} oldugunu dogrulayin")
     public void sonucun_oldugunu_dogrulayin(int result) {
 
-        Assert.assertEquals("sonuc esit degil",result,(sonuc));
+        Assert.assertEquals("sonuc esit degil", result, (sonuc));
 
     }
 
