@@ -2,12 +2,14 @@ stepDefinition\PracticeTestPageStepDefs.class
 stepDefinition\WebDriverStepDefinition.class
 stepDefinition\Practice_TC_07step.class
 pages\AutoexercisePage.class
+stepDefinition\PracticeFormStefDefs.class
 utilities\ReusableMethods$1.class
 pages\FaceBookPage.class
 stepDefinition\PracticeAmazonStepDef.class
 pages\DhtmlgoodiesPage.class
 utilities\ReusableMethods.class
 pages\HmcPage.class
+pages\PracticeFormPage.class
 pages\WebDriverPage.class
 pages\AmazonPage.class
 pages\SaucedemoPage.class
