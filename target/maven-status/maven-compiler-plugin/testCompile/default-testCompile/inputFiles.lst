@@ -1,6 +1,7 @@
 C:\Users\Pc\IdeaProjects\Cucumber\src\test\java\stepDefinition\AutomationaGirisStepDefinition.java
 C:\Users\Pc\IdeaProjects\Cucumber\src\test\java\pages\WebDriverPage.java
 C:\Users\Pc\IdeaProjects\Cucumber\src\test\java\utilities\ConfigReader.java
+C:\Users\Pc\IdeaProjects\Cucumber\src\test\java\pages\PracticeFormPage.java
 C:\Users\Pc\IdeaProjects\Cucumber\src\test\java\pages\SaucedemoPage.java
 C:\Users\Pc\IdeaProjects\Cucumber\src\test\java\stepDefinition\PracticeTestPageStepDefs.java
 C:\Users\Pc\IdeaProjects\Cucumber\src\test\java\runners\Runner.java
@@ -9,6 +10,7 @@ C:\Users\Pc\IdeaProjects\Cucumber\src\test\java\utilities\ReusableMethods.java
 C:\Users\Pc\IdeaProjects\Cucumber\src\test\java\stepDefinition\AmazonSearchNutellaStepDefinition.java
 C:\Users\Pc\IdeaProjects\Cucumber\src\test\java\stepDefinition\Practice_TC_07step.java
 C:\Users\Pc\IdeaProjects\Cucumber\src\test\java\pages\FaceBookPage.java
+C:\Users\Pc\IdeaProjects\Cucumber\src\test\java\stepDefinition\PracticeFormStefDefs.java
 C:\Users\Pc\IdeaProjects\Cucumber\src\test\java\stepDefinition\WebDriverStepDefinition.java
 C:\Users\Pc\IdeaProjects\Cucumber\src\test\java\utilities\Driver.java
 C:\Users\Pc\IdeaProjects\Cucumber\src\test\java\stepDefinition\PracticeAmazonStepDef.java
