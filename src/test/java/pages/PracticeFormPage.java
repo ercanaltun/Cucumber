@@ -48,10 +48,18 @@ public class PracticeFormPage {
     @FindBy(xpath = "//select[@name='dropdown']")
     public WebElement dropdown;
 
+
     @FindBy(xpath = "//input[@value='submit']")
     public WebElement submitButton;
+
+
     @FindBy(xpath = "//*[.='test.text.txt']")
     public WebElement fileVisible;
+
+
+
+
+
 
 
 
