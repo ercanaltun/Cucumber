@@ -3,6 +3,7 @@ package stepDefinition;
 import com.github.javafaker.Faker;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
+import org.junit.Assert;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.interactions.Actions;
 import pages.PracticeNegativePage;
@@ -46,5 +47,7 @@ public class PracticeNegativeTestStepDef {
 
     @And("Authentication information not correct uyarisini dogrular")
     public void authenticationInformationNotCorrectUyarisiniDogrular() {
+        ReusableMethods.waitForVisibility(practiceNegativePage.kaybolanTextMesseage,5);
+        Assert.assertTrue(practiceNegativePage.kaybolanTextMesseage.isDisplayed());
     }
 }
