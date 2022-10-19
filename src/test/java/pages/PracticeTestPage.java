@@ -9,8 +9,8 @@ import java.util.List;
 
 public class PracticeTestPage {
 
-    public PracticeTestPage(){
-        PageFactory.initElements(Driver.getDriver(),this);
+    public PracticeTestPage() {
+        PageFactory.initElements(Driver.getDriver(), this);
     }
 
     @FindBy(xpath = "//input[@id='button']")
@@ -21,20 +21,6 @@ public class PracticeTestPage {
 
     @FindBy(xpath = "//p[.='click']")
     public List<WebElement> clickText;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 }
