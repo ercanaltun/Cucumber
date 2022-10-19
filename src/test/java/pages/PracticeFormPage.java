@@ -7,8 +7,8 @@ import utilities.Driver;
 
 public class PracticeFormPage {
 
-    public PracticeFormPage(){
-        PageFactory.initElements(Driver.getDriver(),this);
+    public PracticeFormPage() {
+        PageFactory.initElements(Driver.getDriver(), this);
     }
 
     @FindBy(xpath = "//input[@name='username']")
@@ -55,14 +55,6 @@ public class PracticeFormPage {
 
     @FindBy(xpath = "//*[.='test.text.txt']")
     public WebElement fileVisible;
-
-
-
-
-
-
-
-
 
 
 }

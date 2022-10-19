@@ -7,33 +7,15 @@ import utilities.Driver;
 
 public class WebDriverPage {
 
-    public  WebDriverPage(){
-        PageFactory.initElements(Driver.getDriver(),this);
+    public WebDriverPage() {
+        PageFactory.initElements(Driver.getDriver(), this);
     }
+
     @FindBy(xpath = "//*[text()='Login Portal']")
     public WebElement loginPortal;
 
     @FindBy(xpath = "//*[@placeholder='Username']")
     public WebElement userName;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 }
