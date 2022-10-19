@@ -1,5 +1,6 @@
 stepDefinition\PracticeTestPageStepDefs.class
 stepDefinition\WebDriverStepDefinition.class
+pages\PracticeNegativePage.class
 stepDefinition\Practice_TC_07step.class
 pages\AutoexercisePage.class
 stepDefinition\PracticeFormStefDefs.class
@@ -19,4 +20,5 @@ stepDefinition\AutomationaGirisStepDefinition.class
 pages\PracticeTestPage.class
 utilities\ConfigReader.class
 stepDefinition\AmazonSearchNutellaStepDefinition.class
+stepDefinition\PracticeNegativeTestStepDef.class
 pages\BlueRentaCarPage.class

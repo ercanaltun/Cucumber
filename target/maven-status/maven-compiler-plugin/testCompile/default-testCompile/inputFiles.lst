@@ -1,4 +1,5 @@
 C:\Users\Pc\IdeaProjects\Cucumber\src\test\java\stepDefinition\AutomationaGirisStepDefinition.java
+C:\Users\Pc\IdeaProjects\Cucumber\src\test\java\pages\PracticeNegativePage.java
 C:\Users\Pc\IdeaProjects\Cucumber\src\test\java\pages\WebDriverPage.java
 C:\Users\Pc\IdeaProjects\Cucumber\src\test\java\utilities\ConfigReader.java
 C:\Users\Pc\IdeaProjects\Cucumber\src\test\java\pages\PracticeFormPage.java
@@ -19,3 +20,4 @@ C:\Users\Pc\IdeaProjects\Cucumber\src\test\java\pages\PracticeTestPage.java
 C:\Users\Pc\IdeaProjects\Cucumber\src\test\java\pages\BlueRentaCarPage.java
 C:\Users\Pc\IdeaProjects\Cucumber\src\test\java\pages\HmcPage.java
 C:\Users\Pc\IdeaProjects\Cucumber\src\test\java\pages\DhtmlgoodiesPage.java
+C:\Users\Pc\IdeaProjects\Cucumber\src\test\java\stepDefinition\PracticeNegativeTestStepDef.java
