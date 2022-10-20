@@ -45,9 +45,13 @@ public class PracticeNegativeTestStepDef {
         practiceNegativePage.sigInNewAccount.click();
     }
 
+
+
     @And("Authentication information not correct uyarisini dogrular")
     public void authenticationInformationNotCorrectUyarisiniDogrular() {
         ReusableMethods.waitForVisibility(practiceNegativePage.kaybolanTextMesseage,5);
         Assert.assertTrue(practiceNegativePage.kaybolanTextMesseage.isDisplayed());
     }
+
+
 }

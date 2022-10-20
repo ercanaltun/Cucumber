@@ -19,10 +19,14 @@ public class PracticeNegativePage {
     @FindBy(xpath = "//*[@name='username']")
     public WebElement userName;
 
+
     @FindBy(xpath = "//*[@class='btn btn-primary']")
     public WebElement sigInNewAccount;
 
 
     @FindBy(xpath = "//*[contains(text(), 'Authentication information not correct.')]")
     public WebElement kaybolanTextMesseage;
+
+    //*[contains(text(), 'Product Successfully Published.')]
+
 }

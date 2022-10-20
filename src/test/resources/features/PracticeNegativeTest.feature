@@ -10,7 +10,10 @@ Feature: medunna login negative test
   And signine tiklar
   And Authentication information not correct uyarisini dogrular
 
+
+
     Examples:
+
       | username | password |
       | username1 | password1 |
       | username2 | password2 |
