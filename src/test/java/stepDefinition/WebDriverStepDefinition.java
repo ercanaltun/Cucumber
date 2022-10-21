@@ -60,18 +60,30 @@ public class WebDriverStepDefinition {
         Assert.assertEquals(expectedPop, actualPop);
     }
 
+
     @And("Ok diyerek Popup'i kapatin")
     public void okDiyerekPopupIKapatin() {
         Driver.getDriver().switchTo().alert().accept();
     }
+
 
     @And("Ilk sayfaya geri donun")
     public void ılkSayfayaGeriDonun() {
         Driver.getDriver().switchTo().window(windowList.get(0));
     }
 
+
+
     @And("Ilk sayfaya donuldugunu test edin")
     public void ılkSayfayaDonuldugunuTestEdin() {
         Assert.assertEquals(ilkSayfa, Driver.getDriver().getCurrentUrl());
     }
+
+
+
+
+
+
+
+
 }
