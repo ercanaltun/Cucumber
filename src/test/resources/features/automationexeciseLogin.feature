@@ -1,6 +1,8 @@
 
+
 @All
 Feature: AutomationExercise Login
+
 
   Scenario: Kullanicinin AutomationExercise Sitesine Giris Yapmasi
     Given Kullanici automationExercise sitesine girer
