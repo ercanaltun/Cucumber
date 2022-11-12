@@ -7,6 +7,7 @@ Feature: Amazon Search
     And Arama sonucunun gorundugunu test eder
 
 
+
   Scenario: Amazonda Nutella Aratma
     Given Kullanici amazon ana sayfasina gider
     Then Kullanici searchboxta dell aratir

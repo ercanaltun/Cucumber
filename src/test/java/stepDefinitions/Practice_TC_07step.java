@@ -1,10 +1,9 @@
-package stepDefinition;
+package stepDefinitions;
 
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import org.junit.Assert;
-import org.openqa.selenium.WebElement;
 import pages.AutoexercisePage;
 import utilities.ConfigReader;
 import utilities.Driver;
