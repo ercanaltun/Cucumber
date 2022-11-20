@@ -20,3 +20,4 @@ Feature:Medunna Doktor Randevulari
     And   Kullanici ana sayfada My Page sekmesine tiklar
     And   My page sekmesinden My Appointments secenegini tiklar
     And   Kullanici  patient id, start date, end date, status bilgilerini gorur
+    And   Sayfayi kapatir

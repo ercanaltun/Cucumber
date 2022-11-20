@@ -6,7 +6,6 @@ pages\FaceBookPage.class
 stepDefinitions\AutomationaGirisStepDefinition.class
 stepDefinitions\PracticeNegativeTestStepDef.class
 stepDefinitions\Practice_TC_07step.class
-stepDefinitions\MyStepdefsTC1.class
 stepDefinitions\PracticeAmazonStepDef.class
 pages\DhtmlgoodiesPage.class
 stepDefinitions\GridStepDefs.class
@@ -21,6 +20,7 @@ pages\SaucedemoPage.class
 runners\Runner.class
 utilities\Driver.class
 pages\ErcanPage.class
+stepDefinitions\UITests\MyStepdefsTC1_TC2.class
 stepDefinitions\WebDriverStepDefinition.class
 pages\PracticeTestPage.class
 runners\GridRunner.class

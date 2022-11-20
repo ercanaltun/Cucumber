@@ -8,7 +8,7 @@ Feature:Medunna Doktor Randevulari
     Then  Kullanici signin butonuna tiklar
     And   Kullanici gecerli bir username ve password girer
     And   Kullanici ana sayfada My Page sekmesine tiklar
-    And   My page sekmesinden My Appointments seçenegini tiklar
+    And   My page sekmesinden My Appointments secenegini tiklar
     And   Appointments sayfasında  randevu listesini ve zaman dilimlerini   bilgilerini gorur
     And   Sayfayi kapatir
 
@@ -18,5 +18,6 @@ Feature:Medunna Doktor Randevulari
     Then  Kullanici signin butonuna tiklar
     And   Kullanici gecerli bir username ve password girer
     And   Kullanici ana sayfada My Page sekmesine tiklar
-    And   My page sekmesinden My Appointments seçenegini tiklar
+    And   My page sekmesinden My Appointments secenegini tiklar
     And   Kullanici  patient id, start date, end date, status bilgilerini gorur
+    And   Sayfayi kapatir
