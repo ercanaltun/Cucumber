@@ -1,4 +1,4 @@
-package stepDefinitions;
+package stepDefinitions.UITests;
 
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
@@ -13,7 +13,7 @@ import java.util.List;
 
 import static org.junit.Assert.assertTrue;
 
-public class MyStepdefsTC1 {
+public class MyStepdefsTC1_TC2 {
     ErcanPage ercanPage = new ErcanPage();
 
     @Given("Kullanici url adresine gider")
@@ -61,9 +61,10 @@ public class MyStepdefsTC1 {
     //Test Case-2
     @And("Kullanici  patient id, start date, end date, status bilgilerini gorur")
     public void kullaniciPatientIdStartDateEndDateStatusBilgileriniGorur() {
-        assertTrue(ercanPage.patientId.isDisplayed()); //300975
-        assertTrue(ercanPage.startDate.isDisplayed()); //25/11/22 03:00
-        assertTrue(ercanPage.endDate.isDisplayed());   //25/11/22 04:00
-        assertTrue(ercanPage.status.isDisplayed());    //UNAPPROVED
+        assertTrue(ercanPage.patientId.isDisplayed());
+        assertTrue(ercanPage.startDate.isDisplayed());
+        assertTrue(ercanPage.endDate.isDisplayed());
+        assertTrue(ercanPage.status.isDisplayed());
     }
+
 }
