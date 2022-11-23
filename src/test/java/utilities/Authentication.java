@@ -1,10 +1,8 @@
 package utilities;
 
-import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.http.ContentType;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
-import io.restassured.specification.RequestSpecification;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -13,34 +11,28 @@ import static io.restassured.RestAssured.given;
 
 public class Authentication {
 
-    public static String  generateToken() {
+//    public static void main(String[] args) {
+//
+//        String guncelToken = generateToken();
+//        System.out.println(guncelToken);
+//    }
 
-        RequestSpecification spec= new RequestSpecBuilder().setBaseUri("https://www.medunna.com").build();
 
-        /*
-        {
-  "password": "string",
-  "rememberMe": true,
-  "username": "string"
-}
-         */
-        // Set the expected data/ beklenen datayi ekle
-        Map<String,Object> data=new HashMap<>();
-        data.put("username","team4");
-        data.put("password","12345678");
-        data.put("rememberMe",true);
+    public static String generateToken() {
+        String username = "Batch81";
+        String password = "Batch81+";
 
-        // Set the URl
-        spec.pathParams("first","api","second","authenticate");
+        Map <String, Object> map = new HashMap<>();
+        map.put("username", username);
+        map.put("password",password);
+        map.put("rememberme","true");
 
-        // Send the Request and get the Response / Request gonder response elde et
-        Response response=given().spec(spec).contentType(ContentType.JSON).body(data).when().post("/{first}/{second}");
-       // response.prettyPrint();
+        String endPoint = "https://www.medunna.com/api/authenticate";
 
-        JsonPath json=response.jsonPath();
-        System.out.println("token : " + json.getString("id_token"));
+        Response response1 = given().contentType(ContentType.JSON).body(map).when().post(endPoint);
 
-    return json.getString("id_token");
+        JsonPath token = response1.jsonPath();
+
+        return token.getString("id_token");
     }
-
 }

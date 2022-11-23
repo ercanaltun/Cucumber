@@ -4,7 +4,7 @@ import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import org.openqa.selenium.WebElement;
-import pages.ErcanPage;
+import pages.Page010;
 import utilities.ConfigReader;
 import utilities.Driver;
 import utilities.ReusableMethods;
@@ -13,8 +13,8 @@ import java.util.List;
 
 import static org.junit.Assert.assertTrue;
 
-public class MyStepdefsTC1_TC2 {
-    ErcanPage ercanPage = new ErcanPage();
+public class UI_Stepdefinitions_1_2 {
+    Page010 ercanPage = new Page010();
 
     @Given("Kullanici url adresine gider")
     public void kullaniciUrlAdresineGider() {

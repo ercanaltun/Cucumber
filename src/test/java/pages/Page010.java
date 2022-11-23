@@ -7,16 +7,16 @@ import utilities.Driver;
 
 import java.util.List;
 
-public class ErcanPage {
+public class Page010 {
 
-  public ErcanPage(){
+  public Page010(){
 
       PageFactory.initElements(Driver.getDriver(),this);
   }
 
     @FindBy(xpath= "//*[@class='dropdown nav-item']")
    public WebElement enbas;
- @FindBy(xpath= "//*[text()='Sign in']")
+ @FindBy(xpath= "(//*[text()='Sign in'])[1]")
  public WebElement signIn;
 
     @FindBy(xpath= "//*[@placeholder='Your username']")
@@ -24,9 +24,6 @@ public class ErcanPage {
 
     @FindBy(xpath= "//*[@placeholder='Your password']")
     public WebElement password;
-
-    @FindBy(xpath= "//*[@id='rememberMe']")
-    public WebElement rememberMe;
 
     @FindBy(xpath= "(//*[text()='Sign in'])[3]")
     public WebElement signInButton;
