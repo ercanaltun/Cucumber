@@ -18,9 +18,11 @@ public class Authentication {
 //    }
 
 
+
     public static String generateToken() {
         String username = "Batch81";
         String password = "Batch81+";
+
 
         Map <String, Object> map = new HashMap<>();
         map.put("username", username);
@@ -31,7 +33,9 @@ public class Authentication {
 
         Response response1 = given().contentType(ContentType.JSON).body(map).when().post(endPoint);
 
+
         JsonPath token = response1.jsonPath();
+
 
         return token.getString("id_token");
     }

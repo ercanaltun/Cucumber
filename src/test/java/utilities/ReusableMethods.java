@@ -29,6 +29,7 @@ public class ReusableMethods {
         // save the screenshot to the path given
         FileUtils.copyFile(source, finalDestination);
         return target;
+
     }
     //========ScreenShot Web Element(Bir webelementin resmini alma)=====//
     public static String getScreenshotWebElement(String name,WebElement element) throws IOException {
@@ -41,6 +42,7 @@ public class ReusableMethods {
         // save the screenshot to the path given
         FileUtils.copyFile(source, finalDestination);
         return  wElementSS;
+
     }
     //========Switching Window(Pencereler arası geçiş)=====//
     public static void switchToWindow(String targetTitle) {
@@ -52,11 +54,13 @@ public class ReusableMethods {
             }
         }
         Driver.getDriver().switchTo().window(origin);
+
     }
     //========Hover Over(Elementin üzerinde beklemek)=====//
     public static void hover(WebElement element) {
         Actions actions = new Actions(Driver.getDriver());
         actions.moveToElement(element).perform();
+
     }
     //==========Return a list of string given a list of Web Element====////
     public static List<String> getElementsText(List<WebElement> list) {
@@ -67,6 +71,7 @@ public class ReusableMethods {
             }
         }
         return elemTexts;
+
     }
     //========Returns the Text of the element given an element locator==//
     public static List<String> getElementsText(By locator) {
