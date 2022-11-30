@@ -39,6 +39,7 @@ public class UI_Stepdefinitions_1_2 {
         ercanPage.myPages.click();
     }
 
+
     @And("My page sekmesinden My Appointments secenegini tiklar")
     public void myPageSekmesindenMyAppointmentsSeceneginiTiklar() {
         ercanPage.myAppointments.click();
@@ -53,10 +54,12 @@ public class UI_Stepdefinitions_1_2 {
         ReusableMethods.waitFor(2);
     }
 
+
     @And("Sayfayi kapatir")
     public void sayfayiKapatir() {
         Driver.closeDriver();
     }
+
 
     //Test Case-2
     @And("Kullanici  patient id, start date, end date, status bilgilerini gorur")
