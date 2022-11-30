@@ -32,8 +32,12 @@ public class AutomationaGirisStepDefinition {
 
     }
 
+
+
     @And("Sayfayı kapatir")
     public void sayfayıKapatir() {
         Driver.closeDriver();
     }
+
+
 }
