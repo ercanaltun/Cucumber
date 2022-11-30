@@ -42,5 +42,10 @@ public class AmazonSearchNutellaStepDefinition {
     public void aramaSonucundaDellGorundugunuTestEder() {
         String expectedResult="dell";
         Assert.assertTrue(Driver.getDriver().getCurrentUrl().contains(expectedResult));
+
+
     }
+
+
+
 }
