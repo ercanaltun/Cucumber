@@ -1,3 +1,4 @@
+@Amazonix
 Feature: Amazon Search
 
 
@@ -5,6 +6,7 @@ Feature: Amazon Search
     Given Kullanici amazon ana sayfasina gider
     Then Kullanici searchboxta nutella aratir
     And Arama sonucunun gorundugunu test eder
+    And sayfayi kapatir
 
 
 
