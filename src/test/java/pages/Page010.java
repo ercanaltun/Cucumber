@@ -16,14 +16,18 @@ public class Page010 {
 
     @FindBy(xpath= "//*[@class='dropdown nav-item']")
    public WebElement enbas;
+
  @FindBy(xpath= "(//*[text()='Sign in'])[1]")
  public WebElement signIn;
+
 
     @FindBy(xpath= "//*[@placeholder='Your username']")
     public WebElement username;
 
+
     @FindBy(xpath= "//*[@placeholder='Your password']")
     public WebElement password;
+
 
     @FindBy(xpath= "(//*[text()='Sign in'])[3]")
     public WebElement signInButton;
